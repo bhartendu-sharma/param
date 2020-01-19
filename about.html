@@ -1,19 +1,145 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is the website helpful to banking services and all about things of jansuvidha ">  
+    
+    <meta name="keywords" contents="Public site">
+
+     <title>Param computer institute and banking jan seva kendra</title>
+     <link rel="stylesheet" type="text/css" href="about_style.css ">
+     <link rel="stylesheet" href="style.css">
+     
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/sun?style=solid">
 </head>
-<body>
-	<div>
-		<p>
-	information about banking services(majorily bank of baroda and some about other banks),JAN SUVIDHA KENDRA,Computer Courses etc.</p>
- 
-    <li></li>
-    <li><button>CLICK ME</button></li>
+<header>
+    <div style="text-align: center;background-color: #756867; text-shadow: 2px 2px #E73F0B;">
+        <ul>
+            <li style="font-size: 40px;color: #A11F0C;font-weight:bolder;"><b>PARAM COMPUTER INSTITUTE</b></li>
+            <br>
+            <li style="font-size: 20px;color: #A11F0C;font-weight:bolder;"><b>And</b></li>
+            <br>
+            <li style="font-size: 40px;color: #A11F0C;font-weight:bolder;"><b>BANKING JAN SEVA KENDRA</b></li>
+        </ul>
+      </div>
+      <nav>
+        <div id="menu-bar">
+      <ul>
+        <li class="home"><a href="index.html"><i class="fa fa-home"></i><b>Home</b></a></li><!--fa fa home etc are icon of home etc--> 
+        <li><a href="about.html"><i class="fa fa-user"></i><b>About Us</b></a></li>
+        <li>
+            <a href="#"><i class="fas fa-sun"></i><b>Services</b></a> <!-- do not use div inside li for another ul  -->
+            
+                <ul>
+                    <li><a href="#"><b>OPEN BOB ACCOUNT</b></a></li>
+                    <li><a href="#"><b>TRANSFER MONEY</b></a></li>
+                    <li><a href="#"><b>JAN SUVIDHA</b></a><i class="fa fa-angle-right"></i>
+                        <ul>
+                            <li><a href="#"><b>INCOME CERTIFICATE</b></a></li>
+                            <li><a href="#"><b>CASTE CERTIFICATE</b></a></li>
+                            <li><a href="#"><b>RESIDENTIAL CERTIFICATE</b></a></li>
+                        </ul></li>
+                </ul>
+            
+        </li>
+        <li><a href="#"><i class="fa fa-inr"></i><b>Pricing</b></a></li>
+        <li><a href="#"><i class="fa fa-edit"></i><b>Training</b></a></li>
+        <li><a href="#"><i class="fa fa-phone"></i><b>Contact</b></a></li>
+        <li><a href="signup.html" style="width: 40%;"><b>Sign Up</b></a></li>
+      </ul>
+    </div>
+   
+     </nav>
+</header>
+
+<body >
+     <div id="about-info">
+          <div class="about-info1">
+               <div>
+                    <div class="about-text">
+                           <p>
+     information about banking services(majorily bank of baroda and some about other banks),JAN SUVIDHA KENDRA,Computer Courses etc.</p>
+                    </div>
+                    <div class="img1">
+                         <img src="./aboutphoto1.jpg" width="70%" height="50%">
+                    </div>
+               </div>
+        
+     <br>
+     <p>click on below for the services of Jan Suvidha</p>
+     <br>
+     <li><button class="btn-clickme">CLICK ME</button></li>
      </div>
      <div>
-     	<p>click on below for the services of Jan Suvidha</p>
-     	
+          <h1>Give your feedback as per your wishes</h1>
+          <form>
+               <div>
+                    <!--type,text-->
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+               </div>
+               <div>
+                    <!--type,number-->
+                    <label for="mobilenumber">Mobile Number</label>
+                    <input type="number" id="mobilenumber" name="mobilenumber" placeholder="Enter mobile number">
+               </div>
+               <div>
+                    <!--type,email-->
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter an email">
+               </div>
+               <div>
+                    <!--select,value by option-->
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                         <option value="male">Male</option>
+                         <option value="female">Female</option>
+                         <option value="other">Other</option>
+                    </select>
+               </div>
+               <div>
+                    <!--type,number-->
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age"><!-- input type number take only integer value except 'e' since its having value,this is with up down keys to increment and decement numbers--> 
+               </div>
+               <div>
+                    <!--type,date-->
+                    <label for="birthday">Birthday</label>
+                    <input type="date" id="birthday" name="birthday"><!--Whats amazing it is created calender to select dd/mm/yyyy(with this format)-->
+               </div>
+               <div>
+                    <!--textarea-->
+                    <label for="message">Message</label><br>    
+                    <textarea name="message" id="message" cols="40" rows="5">
+                         
+                    </textarea><br><br> <!--for longer text we uses textarea(Closing tag) instead of input type text(self closing tag)-->
+                    <!--there is extra space automatically created for more text when using text area with two up down slider(two rows default) while in input type text one row created as default without slider-->
+               </div>
+               <div>
+                    <!--radio-->
+                    <label for="membership">Membership</label>
+                    <input type="radio" id="membership" name="membership" value="simple">Simple
+                    <input type="radio" id="membership" name="membership" value="standard">Standard
+                    <input type="radio" id="membership" name="membership" value="super">Super
+               </div>
+               <div>
+                    <!--checkbox-->
+                    <label for="thissiteis">This site is</label>
+                    <input type="checkbox" id="likes" name="likes" value="best">Best
+                    <input type="checkbox" id="likes" name="likes" value="good">Good
+                    <input type="checkbox" id="likes" name="likes" value="worst">Worst
+               </div>
+               <div>
+                    <!--input submit-->
+                    <input type="submit" value="Submit" class="btn-submit"><!--other can use <button type="submit">Submit<button/>,it is closing tag while input not-->
+                         <!--button reset-->
+                    <button type="reset" class="btn-reset">Reset</button>
+               </div>
+               
+          </form>
      </div>
+     </div>
+	
 </body>
-</html
+</html>

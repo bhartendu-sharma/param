@@ -1,0 +1,35 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+#about-info
+{
+	 background:rgba(0,800,8000);
+	 overflow: hidden;
+}
+.about-text
+{
+	line-height: 40px;  /*height b/w consecutive lines*/
+	height: 50%;
+	width: 50%;
+	font-size: 25px;
+	color: white;
+	font-style: italic;
+	float: left;
+	text-align: center;
+}
+.img1
+{
+	height: 50%;
+	width:50%;
+	float: right;
+	border-radius: 50%;
+}
+.btn-clickme
+{
+	color: red;
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
