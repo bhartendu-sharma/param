@@ -69,7 +69,7 @@ nav ul
 }
 	label.welcome  /*label .welcome is incorrect format since spacing*/
 		{
-			color: red;
+			color: green;
 			font-size: 2rem;
 			padding:0 3rem;
 			float: left;
