@@ -3,16 +3,20 @@
 	margin: 0;
 	padding: 0;
 }
-#about-info
+#about-body
 {
 	 background:rgba(0,800,8000);
-	 overflow: hidden;
+}
+.about-info
+{
+	display: block;
+	width: 100vw;
 }
 .about-text
 {
 	line-height: 40px;  /*height b/w consecutive lines*/
-	height: 50%;
-	width: 50%;
+	height: 400px;
+	width: 50vw;
 	font-size: 25px;
 	color: white;
 	font-style: italic;
@@ -21,10 +25,19 @@
 }
 .img1
 {
-	height: 50%;
-	width:50%;
+	height:400px;
+	width:50vw;
 	float: right;
+	
+}
+.img1 img
+{
+	display: block;
+	height:400px;
+	width:400px;
+	margin-right: 0%;
 	border-radius: 50%;
+	float: right;
 }
 .btn-clickme
 {
@@ -32,4 +45,8 @@
 	font-size: 20px;
 	padding: 10px 20px;
 	border-radius: 5px;
+}
+#feedback
+{
+	margin-left: 15px;
 }
