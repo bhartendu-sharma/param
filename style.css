@@ -81,7 +81,7 @@ nav ul li
 	display: inline-block;
 	margin:0 0;
 	line-height: 4.8rem;/*height b/w consecutive lines*/
-	float: left;  /*vertical list now in a row line  */ 
+	  /*vertical list now in a row line  */ 
 	width: 8rem;
 	position: relative;
 	margin:0 .1rem;
