@@ -9,17 +9,16 @@
      <title>Param computer institute and banking jan seva kendra</title>
      <link rel="stylesheet" type="text/css" href="about_style.css ">
      <link rel="stylesheet" href="style.css">
-     
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/sun?style=solid">
     <!-- Smartphone -->
     <link rel="stylesheet" media="screen and (max-width:500px)" type="text/css" href="mobile.css">
 </head>
-<header>
-    <div id="institute-name">
-      <div class="logo">
-        <img src="./img/backimg1.jpeg">
-      </div>
+<body style="background:rgba(0,800,8000);"> <!-- !important -->
+ <!-- we given inline css in about body to hide index body color
+ as inline css have higher priority -->
+   <div id="institute-name">
         <ul>
             <li><b>PARAM COMPUTER INSTITUTE</b></li>
             <br>
@@ -29,7 +28,9 @@
         </ul>
       </div>
       <nav>
-        <div id="menu-bar">
+   
+      <img src="logo.png" class="logo">
+      
       <ul>
         <li class="home"><a href="index.html"><i class="fa fa-home"></i><b>Home</b></a></li><!--fa fa home etc are icon of home etc--> 
         <li><a href="about.html"><i class="fa fa-user"></i><b>About Us</b></a></li>
@@ -52,14 +53,18 @@
         <li><a href="#"><i class="fa fa-edit"></i><b>Training</b></a></li>
         <li><a href="#"><i class="fa fa-phone"></i><b>Contact</b></a></li>
         <li><a href="signup.html" style="width: 40%;"><b>Sign Up</b></a></li>
+         <div>
+        
+                       <input type="checkbox" name="checkbox" id="check">
+      <label for="check" id="bar"><i class="fas fa-bars"></i></label>
+      </div>
       </ul>
-    </div>
-   
-     </nav>
-</header>
+     
+      
 
-<body id="about-body" >
-          <div class="about-info">
+     </nav>
+  <div id="about-body" >
+         <div class="about-info">
                
                     <div class="about-text">
                            <p>
@@ -144,6 +149,8 @@
           </form>
      </div>
     
+  </div>
+          
 	
 </body>
 </html>
