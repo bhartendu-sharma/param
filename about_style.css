@@ -50,4 +50,18 @@
 #feedback
 {
 	margin-left: 15px;
+	font-size: 35px;
+}
+#feesback-form
+{
+	margin-left: 20px;
+}
+.form-label
+{
+	font-size: 30px;
+	color: #693D3D;
+}
+.form-label .label
+{
+	display: block;
 }
