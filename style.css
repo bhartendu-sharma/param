@@ -9,12 +9,19 @@
 body
 {
 
-	background-color: #353C3F;
+	/*background-color: #353C3F;*/
+	/*background-color:green;*/
+	background-color:rgba(0,800,8000);
+	/*opacity: .4;*/
 	font-family:  Roboto;
+}
+li
+{
+	list-style-type: none;
 }
 #main-nav
 {  width: 100vw;/*it obtaine screen width size*/
-	background-color:#D5D6D2;
+	background-color:#ff4d73;
 	position: sticky;
 	top: 0px;
 	left: 0px;
@@ -29,11 +36,14 @@ body
 	justify-content: center;
 	text-decoration: none;
 	font-weight: 400%;
-	color: #301B28;
+	/*color: #301B28;*/
+	/*color: #fff;*/
+	color: #fff;
 }
 #main-nav a:hover
 {
-	background: red;
+	color: #ff4d73;
+	background: #fff;
 }
 #main-nav ul 
 {
@@ -101,21 +111,41 @@ body
  
 #institute-name
 {
-	text-align: center;background-color: #756867; text-shadow: .14rem .14rem #E73F0B;
+	text-align: center;/*background-color: #756867;*/ /*text-shadow: .14rem .14rem*/ /*#ff4d73;*/ /*#E73F0B;*/
 	min-height: 10rem;
 	width: 100vw;
-	margin-top: -.6rem;
+	margin-top: 5rem;
 	font-family: comic Sans MS;
+	/*background: #fff;*/
+	color: #ff4d73;
 }
 #institute-name ul
 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
   list-style-type: none;
-  margin-left: -1.4rem;
-  margin-top: 10px;
+  /*margin-left: -1.4rem;
+  margin-top: 1rem;*/
 }
 #institute-name ul li
 {
 	font-size: 2.0rem;color: #A11F0C;font-weight:bolder;
+}
+.welcome h1
+{
+	font-size: 5rem;
+	opacity: 1;
+	color: #ff4d73;
+}
+.param-computer h1
+{
+	font-size: 2rem;
+	opacity: 0.8;
+	color: #ff4d73;
+	font-weight: 1000%;
+
 }
 .container
 {  
@@ -148,6 +178,10 @@ body
 	color: #2E4600;
 	border-radius: 1rem;
 }
+.email-address input:focus
+{
+	background-color: rgba(0,0,1000,0.1);
+}
 .stay
 {
 	display: flex;
@@ -155,7 +189,7 @@ body
 }
 .powered-by
 {
-	font-size: 20px;
+	font-size: 2rem;
 	color: blue;
 }
 

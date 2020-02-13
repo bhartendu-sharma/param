@@ -15,18 +15,19 @@
     <!-- Smartphone -->
     <link rel="stylesheet" media="screen and (max-width:500px)" type="text/css" href="mobile.css">
 </head>
-<body style="background:rgba(0,800,8000);"> <!-- !important -->
+<body style="background:rgba(0,800,8000,0.1);"> <!-- !important -->
  <!-- we given inline css in about body to hide index body color
  as inline css have higher priority -->
-   <div id="institute-name">
+  <!--  <div id="institute-name">
         <ul>
             <li><b>PARAM COMPUTER INSTITUTE</b></li>
             <br>
-            <li style="font-size: 20px;"><b>And</b></li>
+            <li style="font-size: 1.5rem;"><b>And</b></li>
             <br>
             <li><b>BANKING JAN SEVA KENDRA</b></li>
         </ul>
       </div>
+   -->   
      
      <nav id="main-nav">
    
@@ -95,9 +96,9 @@
                     <label for="mobilenumber">Mobile Number</label>
                     <input type="number" id="mobilenumber" name="mobilenumber" placeholder="Enter mobile number">
                </div>
-               <div class="form-label">
+               <div class="form-label" id="email">
                     <!--type,email-->
-                    <label for="email">Email</label><br>
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter an email">
                </div>
                <div class="form-label">
@@ -119,35 +120,50 @@
                     <label for="birthday">Birthday</label>
                     <input type="date" id="birthday" name="birthday"><!--Whats amazing it is created calender to select dd/mm/yyyy(with this format)-->
                </div>
-               <div class="form-label">
+               <div class="form-label" id="message-div">
                     <!--textarea-->
-                    <label for="message">Message</label><br>    
+                    <label for="message">Message</label>   
                     <textarea name="message" id="message" cols="40" rows="5">
                          
-                    </textarea><br><br> <!--for longer text we uses textarea(Closing tag) instead of input type text(self closing tag)-->
+                    </textarea> <!--for longer text we uses textarea(Closing tag) instead of input type text(self closing tag)-->
                     <!--there is extra space automatically created for more text when using text area with two up down slider(two rows default) while in input type text one row created as default without slider-->
                </div>
                <div class="form-label">
                     <!--radio-->
                     <label for="membership">Membership</label>
-                    <input type="radio" id="membership" name="membership" value="simple">Simple
-                    <input type="radio" id="membership" name="membership" value="standard">Standard
-                    <input type="radio" id="membership" name="membership" value="super">Super
+                    <div class="membership">
+                      <input type="radio" id="membership" name="membership" value="simple">
+                      <p>Simple</p>
+                    <input type="radio" id="membership" name="membership" value="standard"><p>Standard</p>
+                    <input type="radio" id="membership" name="membership" value="super"><p>Super</p>
+                    </div>
                </div>
                <div class="form-label">
                     <!--checkbox-->
-                    <label for="thissiteis">This site is</label>
-                    <input type="checkbox" id="likes" name="likes" value="best">Best
-                    <input type="checkbox" id="likes" name="likes" value="good">Good
-                    <input type="checkbox" id="likes" name="likes" value="worst">Worst
-               </div>
-               <div class="form-label">
+                    <label for="thissiteis" >This site is</label>
+                    <div class="this-site-is">
+                       <input type="checkbox" id="likes" name="likes" value="best"><p>Best</p>
+                    <input type="checkbox" id="likes" name="likes" value="good"><p>Good</p>
+                    <input type="checkbox" id="likes" name="likes" value="worst"><p>Worst</p>
+
+                    </div>
+                     
+                    </div>
+                    
+              
+               <div class="form-label" id="submit-reset-div">
                     <!--input submit-->
-                    <input type="submit" value="Submit" class="btn-submit"><!--other can use <button type="submit">Submit<button/>,it is closing tag while input not-->
+                    <!-- <input type="submit" value="Submit" class="btn-submit"> --><!--other can use <button type="submit">Submit<button/>,it is closing tag while input not-->
                          <!--button reset-->
-                    <button type="reset" class="btn-reset">Reset</button>
+                          <button type="submit" class="btn-submit">Submit<button/>
+                          <button type="reset" class="btn-reset">Reset</button>
+                    
                </div>
-               
+              <!--  <div class="form-label" id="reset-div">
+                <input type="reset" value="reset" class="btn-reset">
+                 <button type="reset" class="btn-reset">Reset</button>
+               </div>
+                -->
           </form>
      </div>
     
