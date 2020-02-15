@@ -1,10 +1,11 @@
 /*for comment use ctrl+shift+/ in css*/
 *
 {
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
 	box-sizing: border-box;
 	outline: none;
+
 }
 body
 {
@@ -14,18 +15,33 @@ body
 	background-color:rgba(0,800,8000);
 	/*opacity: .4;*/
 	font-family:  Roboto;
+	font-size:1.25rem;
+	width: 100vw;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
 }
 li
 {
 	list-style-type: none;
 }
 #main-nav
-{  width: 100vw;/*it obtaine screen width size*/
+{  max-width: 100%;/*it obtaine screen width size*/
 	background-color:#ff4d73;
 	position: sticky;
 	top: 0px;
 	left: 0px;
-	flex-shrink: 1;
+	display: flex;
+
+}
+.main-menu
+{
+	width: 95%;
+}
+.mobile-icon
+{
+	display: none;
+	cursor: pointer;
 }
 #main-nav a
 {  
@@ -90,17 +106,14 @@ li
 }
 /*.bar-area
 {
-	
+	display: none;
 }*/
-#bar {
-			font-size: 2rem;
+/*#bar {
+			font-size: 160%;
 			color: grey;
 			cursor: pointer;
-		}
-#check
-{
-	display: none;
-}
+		}*/
+
 .logo-image
 {
 	height: 3.5rem;width: 5rem;
@@ -109,60 +122,77 @@ li
 	margin-bottom: 0;
 }
  
-#institute-name
+#institute-name-div
 {
-	text-align: center;/*background-color: #756867;*/ /*text-shadow: .14rem .14rem*/ /*#ff4d73;*/ /*#E73F0B;*/
+	/*text-align: center;*//*background-color: #756867;*/ /*text-shadow: .14rem .14rem*/ /*#ff4d73;*/ /*#E73F0B;*/
 	min-height: 10rem;
-	width: 100vw;
-	margin-top: 5rem;
+	min-width: 50%;
+	margin-top: 10rem;
+	margin-left: 15%;
 	font-family: comic Sans MS;
 	/*background: #fff;*/
 	color: #ff4d73;
+	background: rgba(0,800,8000);
 }
-#institute-name ul
+#institute-name-div ul
 {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	/*align-items: center;*/
 	justify-content: center;
   list-style-type: none;
   /*margin-left: -1.4rem;
   margin-top: 1rem;*/
 }
-#institute-name ul li
+/*#institute-name-div ul li
 {
-	font-size: 2.0rem;color: #A11F0C;font-weight:bolder;
-}
-.welcome h1
+	font-size: 160%;color: #A11F0C;font-weight:bolder;
+}*/
+/*.welcome h1
 {
 	font-size: 5rem;
 	opacity: 1;
 	color: #ff4d73;
-}
-.param-computer h1
+}*/
+.institute-name h1
 {
-	font-size: 2rem;
+	font-size: 140%;
 	opacity: 0.8;
 	color: #ff4d73;
 	font-weight: 1000%;
 
 }
+.welcome-to
+{
+	font-size: 250%;
+}
+.color-change1
+{
+	animation: colorchangename 1s infinite
+}
+@keyframes colorchangename
+{
+	0%{color: red;}
+	25%{color: green;}
+	50%{color:#fff;}
+	100%{color:#ff4d73;}
+}
 .container
 {  
 	background-color: #2D3033;
 	color: #00CFFA;
-	margin-top: 40rem;
+	margin-top: 30rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	height: 10.5rem;width: 100vw;
+	min-height: 10.5rem;width: 100%;
 	border-radius: 2rem;
 }
 .subscribe
 {
 	color: #fff;
 	background: #FF420E;
-	font-size: 2.5rem;
+	font-size: 200%;
 	height: 6.2rem;
 
 	border:none;
@@ -189,7 +219,7 @@ li
 }
 .powered-by
 {
-	font-size: 2rem;
+	font-size: 160%;
 	color: blue;
 }
 
@@ -400,3 +430,31 @@ display: block;
 	border-radius: 50%;
 	cursor: pointer;/*make hatheli pointer
 }*/
+@media only screen and (max-width:700px)
+{
+  #main-nav .main-menu
+  {
+  	display: none;
+  }
+   #main-nav
+  {
+  	display: inline-block;
+  	width: 100vw;
+  }
+  #main-nav .mobile-icon
+  {
+  	float: right;
+  	margin-right: 4%;
+  }
+#institute-name-div
+{  width:96%;/*if alredy given max-width then more than this width not work here*/
+    margin-left:2%;margin-right: 2%;
+}
+#institute-name-div h1
+{
+}
+.container
+{
+	flex-direction: column;
+}
+}

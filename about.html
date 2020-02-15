@@ -15,7 +15,7 @@
     <!-- Smartphone -->
     <link rel="stylesheet" media="screen and (max-width:500px)" type="text/css" href="mobile.css">
 </head>
-<body style="background:rgba(0,800,8000,0.1);"> <!-- !important -->
+<body class="main-body"> <!-- !important -->
  <!-- we given inline css in about body to hide index body color
  as inline css have higher priority -->
   <!--  <div id="institute-name">
@@ -29,12 +29,12 @@
       </div>
    -->   
      
-     <nav id="main-nav">
+      <nav id="main-nav">
    
       <!-- <div class="logo"><img src="logo.png" class="logo-image"></div> -->
-      
-      <ul class="main-menu">
-        <li><img src="logo.png" class="logo-image"></li>
+       <img src="logo.png" class="logo-image">
+      <ul class="main-menu"  id="check-class">
+        
         <li class="home"><a href="index.html"><i class="fa fa-home"></i><b>Home</b></a></li><!--fa fa home etc are icon of home etc--> 
        <li><a href="about.html"><i class="fa fa-user"></i><b>About Us</b></a></li>
         <li>
@@ -54,19 +54,23 @@
                       
         </li>
         <li><a href="#"><i class="fa fa-inr"></i><b>Pricing</b></a></li>
-        <li><a href="#"><i class="fa fa-edit"></i><b>Training</b></a></li>
+       <!--  <li><a href="#"><i class="fa fa-edit"></i><b>Training</b></a></li> -->
         <li><a href="#"><i class="fa fa-phone"></i><b>Contact</b></a></li>
         <li><a href="signup.html"><b>Sign Up</b></a></li>
-         <li class="bar-area">
+         
+    </ul>
+    <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fas fa-bars"></i></a>
+  <!--   <div class="bar-area">
         
                        <input type="checkbox" name="checkbox" id="check">
       <label for="check" id="bar"><i class="fas fa-bars"></i></label>
-      </li>
-      </ul>
+      </div>
+       -->
      
       
 
-     </nav><div class="about-body" >
+     </nav>
+     <div class="about-body" >
          <div class="about-info">
                
                     <div class="about-text">
@@ -80,11 +84,11 @@
         </div>
     
      <div class="feedback">
-     <p>click on below for the services of Jan Suvidha</p>
+     <p class="click-on-below">click on below for the services of Jan Suvidha</p>
      <br>
        <button class="btn-clickme">CLICK ME</button>
      
-          <h1 style="color: #7D4427;font-size: 40px;font-weight: bolder;">Give your feedback as per your wishes</h1>
+          <h1 class="feedback-wish">Give your feedback as per your wishes</h1>
           <form class="feedback-form">
                <div class="form-label">
                     <!--type,text-->
