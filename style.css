@@ -450,9 +450,6 @@ display: block;
 {  width:96%;/*if alredy given max-width then more than this width not work here*/
     margin-left:2%;margin-right: 2%;
 }
-#institute-name-div h1
-{
-}
 .container
 {
 	flex-direction: column;
