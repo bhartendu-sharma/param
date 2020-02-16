@@ -20,7 +20,8 @@
 	width: 100vw;
 }
 .about-text
-{   width: 50%;
+{
+  margin-top: 1rem;   width: 50%;
 	line-height: 2rem;  /*height b/w consecutive lines*/
 	font-size: 6rem;
 	color: white;
