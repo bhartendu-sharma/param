@@ -2,6 +2,7 @@
 {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 .about-body
 {
@@ -14,12 +15,12 @@
 {
 	display: flex;
 	flex-grow: 1;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	width: 100vw;
 }
 .about-text
-{
+{   width: 50%;
 	line-height: 2rem;  /*height b/w consecutive lines*/
 	font-size: 6rem;
 	color: white;
@@ -27,14 +28,29 @@
 	text-align: center;
 }
 .about-text p
+{  color: #f0810f;
+	font-size: 2rem;
+		margin-left:2rem;
+}
+.img1
 {
-	margin:2rem;
+	width: 50%;
 }
 .img1 img
 {
 	height: 25rem;
 	width: 25rem;
 	border-radius: 50%;
+}
+.click-on-below
+{
+	font-size: 2rem;
+	color: #626D71;
+}
+.feedback-wish
+{
+	font-size: 2.5rem;
+	color: #ff420E;
 }
 /*.about-text
 {
@@ -82,7 +98,7 @@
 	flex-direction: column;
 	margin-left: 1.5rem;
 	width: 40vw;
-	height: 55rem;
+	min-height: 55rem;
 }
 .form-label
 { 
@@ -100,20 +116,20 @@
 }*/
 .form-label label
 {
-   color: red;
+   color: #FF00FF;
 
 }
 .form-label input,#gender
 {
 	 margin-left: .2vw;
-	 height: 2rem;
+	 min-height: 2rem;
    border-radius: 2.25rem;
 	width: 20vw;
 }
 #message
 {
 	border-radius: 1rem;
-	height: 4rem;
+	min-height: 4rem;
 	width: 20vw;
 }
 .membership,.this-site-is
@@ -152,3 +168,88 @@
 {
 	display: block
 }*/
+@media only screen and (max-width:700px)
+{
+	.about-info
+	{  display: flex;
+		flex-direction: column;
+		align-items: center;justify-content: center;
+	}
+	.about-text
+	{
+		width: 95%;
+	}
+	.about-text p
+	{
+		font-size: 2rem;
+		line-height: 2rem;
+		justify-content:flex-start;align-items: flex-start;
+		/*background: green;*/
+	}
+	.img1
+	{
+		width: 90%;
+		 display: flex;
+		flex-direction: column;
+		align-items: center;justify-content: center;
+
+	}
+	.img1 img
+	{
+		height: 15rem;
+		width: 15rem;
+		border-radius: 50%;
+	}
+
+.form-label
+{ 
+	display: flex; 
+	flex-direction: column;
+	font-size: 2rem;
+	color: #693D3D;
+	margin-top: .4rem;/*it is applied for all form-label from parent*/
+}
+/*#email 
+{
+  margin-top: 0px;
+}*/
+.form-label label
+{
+   color: red;
+
+}
+.form-label input,#gender
+{  
+   width: 70vw;
+  
+}
+#message
+{
+	border-radius: 1rem;
+	height: 4rem;
+	width: 70vw;
+}
+.membership,.this-site-is
+{
+	display: flex;flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+.membership p,.this-site-is p
+{
+	font-size: 1.5rem;
+}
+.btn-submit,.btn-reset
+{
+	
+	/* margin-left: .2vw;*/
+	 height: 2rem;
+   border-radius: 2.25rem;
+	width: 60vw;
+	margin-top: 1rem;
+  padding: 1rem;
+}
+
+
+}
